@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-----Fonts----->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="main">
+            <header>
+               <a class=logoLink href="index.html"><h2 class="logo"> <div class="lastLetter">oiloftroP</div> </h2></a>
+                <div class="toggleMenu" onclick="menuToggle()"></div>
+
+                <ul class="menu">
+                    <li><a href="Bio.html">Bio</a></li>
+                    <li><a href="Portfolio.html">Portfolio</a></li>
+                    <li><a href="#">Coming-soon</a></li>
+                </ul>
+            </header>
+            <!--Main content-->
+            <div class="content">
+                <h1>I'm Max Wardle</h1>
+                <h2>Apprentice Software Engineer</h2>
+                <p>"1101001101001110011011001"</p>
+                <a href="https://www.linkedin.com/in/max-wardle-a294a225a/" target="_blank"> Contact Me </a>
+        </div>
+        <img src="Photos/WebsiteBackground.jpg" class="me">
+    </section>
+    <script>
+        function menuToggle(){
+            const toggleMenu = document.querySelector('.toggleMenu')
+            const menu = document.querySelector('.menu')
+            toggleMenu.classList.toggle('active')
+            menu.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>

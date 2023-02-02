@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-----Fonts----->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="bStyles.css">
+</head>
+<body>
+    <section class="main">
+            <header>
+               <a class=logoLink href="index.html"><h2 class="logo"> <div class="lastLetter">oiloftroP</div> </h2></a>
+                <div class="toggleMenu" onclick="menuToggle()"></div>
+
+                <ul class="menu">
+                    <li><a href="Bio.html">Bio</a></li>
+                    <li><a href="Portfolio.html">Portfolio</a></li>
+                    <li><a href="#">Coming-soon</a></li>
+                </ul>
+            </header>
+            <!--Main content-->
+            <div class="content">
+                <div class="aboutMe">
+                    <h3>About me:</h3>
+                    <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                   Tempore, accusantium hic porro quasi temporibus odit.
+                    </p>
+                </div>
+                
+                <div class="interests">
+                    <h3>----- Interests -----</h3>
+                <ul>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                </ul>
+                </div>
+                <div class="interests">
+                    <h3>----- Hobbies -----</h3>
+                <ul>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                    <li>Lorem, ipsum.</li>
+                </ul>
+                </div>
+                <img src="Photos/BioPic copy.png" class="bioPic">
+            </div>
+            <footer>
+                <div class="footerContent">
+                    <p>Here are links to my other socials:</p>
+                    <ul class="socials">
+                        <li><a target="_blank" href="https://www.facebook.com/groups/ElonMusk/"><i class="fa fa-facebook"></i></fa></a></li>
+                        <li><a target="_blank" href="https://www.youtube.com/@Exurb1a/videos"><i class="fa fa-youtube"></i></fa></a></li>
+                        <li><a target="_blank" href="https://twitter.com/elonmusk"><i class="fa fa-twitter"></i></fa></a></li>
+                    </ul>
+                </div>
+                <div class="footerBottom">
+                    <p>copyright &copy;2022 MaxWCode. designed by <span>Max Wardle</span></p>
+                </div> 
+            </footer>
+    </section>
+    <script>
+        function menuToggle(){
+            const toggleMenu = document.querySelector('.toggleMenu')
+            const menu = document.querySelector('.menu')
+            toggleMenu.classList.toggle('active')
+            menu.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
